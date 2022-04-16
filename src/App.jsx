@@ -6,6 +6,7 @@ import Registrar from './pages/Registrar';
 import ConfirmarCuenta from './pages/ConfirmarCuenta';
 
 function App() {
+  console.log(import.meta.env.VITE_BACKEND_URL);
   return (
     <BrowserRouter>
       <Routes>
