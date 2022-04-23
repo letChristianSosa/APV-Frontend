@@ -3,7 +3,6 @@ import Formulario from "../components/Formulario";
 import ListadoPacientes from "../components/ListadoPacientes";
 
 const AdministrarPacientes = () => {
-
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
   return (
     <div className="flex flex-col md:flex-row">
