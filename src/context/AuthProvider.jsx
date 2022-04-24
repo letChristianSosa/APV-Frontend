@@ -45,13 +45,18 @@ const AuthProvider = ({children}) => {
           setAuth({});
      }
 
+     const actualizarPerfil = datos => {
+          
+     }
+
      return (
           <AuthContext.Provider
                value={{
                     auth,
                     setAuth,
                     cargando,
-                    cerrarSesion
+                    cerrarSesion,
+                    actualizarPerfil
                }}
           >
                {children}
