@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import usePacientes from '../hooks/usePacientes';
 import Paciente from './Paciente';
 
