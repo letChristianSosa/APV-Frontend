@@ -90,6 +90,7 @@ export const PacientesProvider = ({children}) => {
                     guardarPaciente,
                     setEdicion,
                     paciente,
+                    setPaciente,
                     eliminarPaciente
                }}
           >

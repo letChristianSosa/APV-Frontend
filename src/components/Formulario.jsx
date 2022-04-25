@@ -33,15 +33,15 @@ const Formulario = () => {
           }
 
           guardarPaciente({nombre, propietario, email, fecha, sintomas, id});
-          setPaciente({});
           setAlerta({msg: 'Guardado correctamente'});
-
+          
           setNombre('')
           setPropietario('')
           setEmail('')
           setFecha('')
           setSintomas('')
           setId(null)
+          setPaciente({});
      }
 
   return (
