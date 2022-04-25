@@ -5,13 +5,13 @@ import Alerta from "../components/alerta";
 
 const EditarPerfil = () => {
      
-     const {auth, actualizarPerfil} = useAuth();
+     const {auth, actualizarPerfil, setAuth} = useAuth();
      const [perfil, setPerfil] = useState({});
      const [alerta, setAlerta] = useState({});
 
      useEffect(() => {
           setPerfil(auth);
-     }, [auth, perfil]);
+     }, [auth]);
 
      const handleSubmit = async e => {
           e.preventDefault();
@@ -23,6 +23,7 @@ const EditarPerfil = () => {
           }
 
           const resultado = await actualizarPerfil(perfil);
+          setAuth({...auth, web: perfil.web, telefono: perfil.telefono})
           setAlerta(resultado);
      }
 

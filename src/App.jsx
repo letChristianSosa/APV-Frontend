@@ -15,7 +15,6 @@ import { AuthProvider } from './context/AuthProvider'
 import { PacientesProvider } from './context/PacientesProvider'
 
 function App() {
-  console.log(import.meta.env.VITE_BACKEND_URL);
   return (
     <BrowserRouter>
       <AuthProvider>
