@@ -12,7 +12,7 @@ const Formulario = () => {
 
      const [alerta, setAlerta] = useState({});
 
-     const {guardarPaciente, paciente} = usePacientes();
+     const {guardarPaciente, paciente, setPaciente} = usePacientes();
 
      useEffect(()=>{
           if(paciente?.nombre){
@@ -32,7 +32,8 @@ const Formulario = () => {
                return;
           }
 
-          guardarPaciente({nombre, propietario, email, fecha, sintomas, id})
+          guardarPaciente({nombre, propietario, email, fecha, sintomas, id});
+          setPaciente({});
           setAlerta({msg: 'Guardado correctamente'});
 
           setNombre('')
